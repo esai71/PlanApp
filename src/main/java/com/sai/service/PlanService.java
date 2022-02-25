@@ -27,7 +27,7 @@ public class PlanService {
 		}
 		if(planRequest.getPlanName().equals("CCAP"))
 		{
-             if(planRequest.getIncome().equals(0) || planRequest.getIncome()<200 && planRequest.getAge()<16) {
+             if(planRequest.getIncome().equals(0) || planRequest.getIncome()<=200 && planRequest.getAge()<=16) {
             	 
             	 planStatus= s.setPlanStatuss("approve");
             	 System.out.println("sai");
